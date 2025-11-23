@@ -1,6 +1,6 @@
 {
   "name": "ble-scanner",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Generic BleScanner using NimBle listening to advertisements. IDF component variant.",
   "keywords": [
     "ble",
@@ -25,3 +25,4 @@
     "url": "https://github.com/AzonInc/ble-scanner"
   }
 }
+

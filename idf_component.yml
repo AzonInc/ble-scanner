@@ -1,5 +1,5 @@
 ## IDF Component Manager Manifest File
-version: "2.0.0"
+version: "2.1.0"
 license: "GPL-3.0"
 description: "Generic BleScanner using NimBle listening to advertisements. IDF component variant."
 url: "https://github.com/AzonInc/ble-scanner"
@@ -11,18 +11,18 @@ tags:
   - BLE
   - NimBLE
 dependencies:
+  idf: ">=5.5"
+
   esp-nimble-cpp:
     git: https://github.com/h2zero/esp-nimble-cpp.git
-    version: fa468d360a56712f3f39a1fba74b97340ebca8a9
+    version: "2.3.3"
+    
   espressif/esp_hosted:
     version: "*"
     rules:
       - if: "target in [esp32p4]"
+      
   espressif/esp_wifi_remote:
-    version: "<0.5.4"
-    rules:
-      - if: "target in [esp32p4]"
-  idf:
-    version: ">=5.1.0"
+    version: "*"
     rules:
       - if: "target in [esp32p4]"
